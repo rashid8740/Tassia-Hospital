@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TASSIA HOSPITAL</title>
+    <meta name="author" content="name" />
+    <meta name="description" content="description here" />
+    <meta name="keywords" content="keywords,here" />
+    <link
+      href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon"  type="image/png" href="img/favicon.png">
+    <script
+      src="https://kit.fontawesome.com/613f7240b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+  </head>
+  <body>
+    <div class="bg-white" style="scroll-behavior: smooth">
+    
+      <!--navigation-->
+      <prenav>
+        <div 
+        class="flex
+        items-center
+        flex-wrap
+        justify-between
+        bg-gray-700
+        hidden
+        md:flex
+        lg:flex
+        w-full
+        z-10
+        top-0
+        shadow-md
+        ">
+        <div class="justify-between space-x-3 lg:flex md:flex ml-10 h-10 border-l-0  border-t-0 border-b-0 border py-2 px-4 border-gray-600">
+          <a href=""><i class="fab fa-facebook-f text-gray-200"></i></a>
+          <a href=""><i class="fab fa-twitter text-gray-200"></i></a>
+          <a href=""><i class="fab fa-instagram text-gray-200"></i></a>
+          <a href=""><i class="fab fa-linkedin-in text-gray-200"></i></a>
+        </div>
+    <span class="flex gap-2  text-gray-200 items-center border-l-0  border-t-0 border-b-0 border py-2 px-4 border-gray-600">        <a
+      class="
+        flex
+        space-x-1
+        items-center
+        justify-center
+        text-xs
+        lg:text-lg
+        md:text-xs
+      "
+      href="tell:+254721203185"
+    >
+      <span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-5 animate-bounce"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+          />
+        </svg>
+      </span>
+      <span class= "text-sm">+2547 21 203 185</span>
+    </a>
+
+    </span>
+    <span class="flex gap-2  text-gray-200 items-center border-l-0  border-t-0 border-b-0 border py-2 px-4 border-gray-600 ">Open:
+      <div class="text-sm flex ">
+        
+        24hrs   Everyday
+      </div>
+      </span>
+    <a href="mailto:">
+      <span class="flex gap-2  text-gray-200 items-center mr-10 "> 
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+        </svg>
+        <div class="text-sm">
+        tassiahospital@gmail.com
+        </div>
+        </span>
+    </a>
+        </div>
+      </prenav>
+      <nav
+        class="
+          flex
+          items-center
+          justify-between
+          flex-wrap
+          bg-blue-400
+          p-6
+          w-full
+          z-10
+          top-0
+          shadow-md
+        "
+      >
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <a href="#" class="flex items-center px-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h2 class="lg:font-bold m-2">TASSIA HOSPITAL</h2>
+          </a>
+        </div>
+
+        <div class="block lg:hidden">
+          <button
+            id="nav-toggle"
+            class="
+              flex
+              items-center
+              px-1
+              py-1
+              border
+              rounded
+             
+              hover:text-white hover:border-white
+              border-gray-200
+            "
+            style="color: white"
+          >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+
+        <div
+          class="
+            w-full
+            flex-grow
+            lg:flex lg:items-center lg:w-auto
+            hidden
+            pt-6
+            lg:pt-0 lg:bg-transparent
+            sm:bg-gray-300 sm:bg-opacity-10
+          "
+          id="nav-content"
+        >
+          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a
+                class="inline-block py-2 px-4 text-white no-underline text-sm"
+                href="home"
+                >HOME</a
+              >
+            </li>
+            <li class="mr-3">
+              <a
+                class="
+                  inline-block
+                  text-white
+                  no-underline
+                  hover:text-gray-900 hover:text-underline
+                  py-2
+                  px-4
+                  text-sm
+                "
+                href="#departments"
+                >DEPARTMENTS</a
+              >
+            </li>
+            <li class="mr-3">
+              <a
+                class="
+                  inline-block
+                  text-white
+                  no-underline
+                  hover:text-gray-900 hover:text-underline
+                  py-2
+                  px-4
+                  text-sm
+                "
+                href="#team"
+                >ABOUT</a
+              >
+            </li>
+            
+            <li class="mr-3">
+              <a
+                class="
+                  inline-block
+                  text-white
+                  no-underline
+                  hover:text-gray-900 hover:text-underline
+                  py-2
+                  px-4
+                  text-sm
+                "
+                href="#footer"
+                >CONTACTS</a
+              >
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+     <!--Hero section-->
+     <section class="relative  bg-blueGray-50" id="home"></section>
+      <div class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
+              <div class="absolute top-0 w-full h-full bg-center bg-cover" style="
+                  background-image: url('img/doctors.jpg');
+                ">
+                <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+              </div>
+              <div class="container relative mx-auto">
+                <div class="items-center flex flex-wrap">
+                  <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                    <div class="pr-12">
+                      <h1 class="text-white font-semibold text-5xl">
+                        Your story starts with us.
+                      </h1>
+                      <p class="mt-4 text-lg text-blueGray-200">
+                        We are guided by our values of Integrity, Hardwork, Honesty, Compassion, Care, Reliability and Accountability.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px" style="transform: translateZ(0px)">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                  <polygon class="text-blueGray-200 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+              </div>
+            </div>
+            <section class="pb-10 bg-blueGray-200 -mt-24">
+              <div class="container mx-auto px-4">
+                <div class="flex flex-wrap">
+                  <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                      <div class="px-4 py-5 flex-auto">
+                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                          <i class="fas fa-award"></i>
+                        </div>
+                        <h6 class="text-xl font-semibold">NHIF ACCREDITED</h6>
+                        <p class="mt-2 mb-4 text-blueGray-500">
+                          Divide details about your product or agency work into parts.
+                          A paragraph describing a feature will be enough.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full md:w-4/12 px-4 text-center">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                      <div class="px-4 py-5 flex-auto">
+                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                          </svg>
+                        </div>
+                        <h6 class="text-xl font-semibold">QUALITY SERVICES</h6>
+                        <p class="mt-2 mb-4 text-blueGray-500">
+                          Tassia hospital  welcomes you for the most trending and heart moving community services healthwise.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                      <div class="px-4 py-5 flex-auto">
+                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                          </svg>
+                        </div>
+                        <h6 class="text-xl font-semibold">VISION</h6>
+                        <p class="mt-2 mb-4 text-blueGray-500">
+                          To be the region’s best institution in the provision of the highest quality healthcare at an affordable cost.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <footer class="relative  pt-8 pb-6 mt-1">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap items-center md:justify-between justify-center">
+            <div class="w-full md:w-6/12 px-4 mx-auto text-center">
+              
+            </div>
+          </div>
+        </div>
+      </footer>
+            </section>
+            </section>
+
+    <!--End Hero-->
+
+    <!-- departments -->
+<section class="bg-blueGray-100" id="departments">
+  <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+
+    <div class="max-w-xl mb-5 md:mx-auto sm:items-center lg:max-w-2xl sm:text-center">
+      <div class="mb-4 sm:text-center flex justify-center">
+        <a href="/" aria-label="Article" class="inline-block max-w-lg font-sans text-3xl font-extrabold leading-none tracking-tight text-black transition-colors duration-200 hover:text-deep-purple-accent-700 sm:text-4xl ">
+          DEPARTMENTS
+        </a>
+      </div>
+      <p class="text-base text-gray-700 md:text-lg flex justify-center">
+        Below are the departments of different services offered at our hospital.
+      </p>
+    </div>
+    <div class="flex flex-wrap  justify-center">
+      <div class="xl:w-1/3 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="data:image/jpeg;base64,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" alt="content">
+         <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font ">INPATIENT</h3>
+          <p class="leading-relaxed text-base"> We offer inpatient services for critically ill patients which is manned by a group of  specialised doctors. We offer quality services and quality care to our patients. </p>
+        </div>
+      </div>
+      <div class="xl:w-1/3 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8XpJ29lOSTJOfSI7kE2V4GggJXklGA9wpBA&usqp=CAU" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">OUTPATIENT</h3>
+          <p class="leading-relaxed text-base"> Our outpatient offer a wide range services from accidents and emergency,wellnes clinic, family planning and physiotherapy to mention but a few.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/3 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdAYUG9eATSHAEiGiHHA0dspJv6FrDX6j64w&usqp=CAU" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">REPRODUCTIVE HEALTH</h3>
+          <p class="leading-relaxed text-base">We believe that every women should be able to access Antenatal care no matter their case. We have a group of  experts who attend to our patients.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/3 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOoXRCiBXQZYxahm4FTDmwi7DFUBSZAKP1Ng&usqp=CAU" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">PAEDIATRIC AND CHILD HEALTH</h3>
+          <p class="leading-relaxed text-base"> We offer both child baby friendly and KEPI  vaccines by our qualified nurses.  Routine child health assesment and  nutritional counselling and support for under five years.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/3 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="data:image/jpeg;base64,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" alt="content">
+         <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font ">CONSULTATION CLINIC</h3>
+          <p class="leading-relaxed text-base">The following services are availabe at our consultation clinic;Gynaecology, paediatric clinic,Orthopaedic clinic,pain management,TB clinic to mention but a few.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/3 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKenzDYGiC6zlmEOfTF_Ev_TVoj91W2wbYIA&usqp=CAU" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">DENTAL SERVICES</h3>
+          <p class="leading-relaxed text-base"> we offer a wide range of dental services to adults and children:Aesthetic dentistry, Veneers, Tooth coloured white fillings, Teeth whitening, Root canal treatment, Implantology.</p>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+    
+</section>
+    <!-- end departments -->
+<!-- team -->
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 " id="team">
+  <div class="mx-auto mb-10 lg:max-w-xl sm:text-center">
+    <p class="inline-block px-3 py-px mb-4 text-2xl font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+      Discover Our Team
+    </p>
+    <p class="text-base text-gray-700 md:text-lg text-center">
+      Tassia puts stock in conveying the most elevated quality administration with quality and sympathy every day.
+    </p>
+  </div>
+  <div class="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg">
+    <div>
+      <div class="relative pb-56 mb-4 rounded shadow lg:pb-64">
+        <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
+      </div>
+      <div class="flex flex-col sm:text-center">
+        <p class="text-lg font-bold">Dr.Ali Wario</p>
+        <p class="mb-5 text-xs text-gray-800">CEO & Founder</p>
+        <div class="flex items-center space-x-3 sm:justify-center ">
+          <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+              <path
+                d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/thasir.wario" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+              <path
+                d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="relative pb-56 mb-4 rounded shadow lg:pb-64">
+        <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+      </div>
+      <div class="flex flex-col sm:text-center">
+        <p class="text-lg font-bold">Marta Clermont</p>
+        <p class="mb-5 text-xs text-gray-800">Design Team Lead</p>
+        <div class="flex items-center space-x-3 sm:justify-center">
+          <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+              <path
+                d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
+              ></path>
+            </svg>
+          </a>
+          <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+              <path
+                d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="relative pb-56 mb-4 rounded shadow lg:pb-64">
+        <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+      </div>
+      <div class="flex flex-col sm:text-center">
+        <p class="text-lg font-bold">Alice Melbourne</p>
+        <p class="mb-5 text-xs text-gray-800">Human Resources</p>
+        <div class="flex items-center space-x-3 sm:justify-center">
+          <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+              <path
+                d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
+              ></path>
+            </svg>
+          </a>
+          <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+              <path
+                d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="relative pb-56 mb-4 rounded shadow lg:pb-64">
+        <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+      </div>
+      <div class="flex flex-col sm:text-center">
+        <p class="text-lg font-bold">John Doe</p>
+        <p class="mb-5 text-xs text-gray-800">Good guy</p>
+        <div class="flex items-center space-x-3 sm:justify-center">
+          <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+              <path
+                d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
+              ></path>
+            </svg>
+          </a>
+          <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+              <path
+                d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end team --> 
+<!-- map  -->
+<section class="text-gray-600 body-font relative">
+  <div class="mx-auto lg:mb-10 md:mb-7 mb-4 lg:max-w-xl sm:text-center flex justify-center">
+    <p class="inline-block px-3 py-px mt-4 text-3xl font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+      HOW TO FIND US
+    </p>
+  </div>
+  <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+    <div class="lg:w-2/3 md:w-1/2 bg-transparent rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+      <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?q=tassia%20hospital&t=k&z=17&ie=UTF8&iwloc=&output=embed" style="filter: tra contrast(1.2) opacity(0.4);"></iframe>
+      <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md ">
+        <div class="lg:w-1/2 px-6">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+          <p class="mt-1">Please zoom in and out for clear vission</p>
+        </div>
+        <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+          <a class="text-indigo-500 leading-relaxed">tassiahospital@email.com</a>
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+          <p class="leading-relaxed">07-212-03185</p>
+        </div>
+      </div>
+    </div>
+    <img alt="ecommerce" class="lg:w-2/5 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://scontent.fnbo1-1.fna.fbcdn.net/v/t39.30808-6/242890743_1031141947662006_3789382402420335014_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeEd0mDBj3GV6suIc5H-655o9UUP60T1ZF_1RQ_rRPVkXyVEOsoJiCN6RDl2xfjW64wXucQwEcsM8aXVqGjICH7B&_nc_ohc=HxD84ebDtRUAX91HNPD&_nc_ht=scontent.fnbo1-1.fna&oh=00_AT-pkzq9EqDU5P3qkCYDrrvIVb4c4RwsXRebeQlRlpE-1w&oe=61EEE970">
+  </div>
+</section>
+<!-- end map  -->
+
+<!-- footer  -->
+<footer class="text-center lg:text-left bg-gray-100 text-gray-600" id="footer">
+  
+  <div class="mx-6 py-10 text-center md:text-left">
+    <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="">
+        <h6 class="
+            uppercase
+            font-semibold
+            mb-4
+            flex
+            items-center
+            justify-center
+            md:justify-start
+          ">
+          TASSIA HOSPITAL
+        </h6>
+        <p>
+          At Tassia Hospital, Nairobi, we are focused in providing an efficient, customer focused and friendly service coupled with continuous improvement in technology and training. As a service to the society, we respect and welcome all our patients
+        </p>
+      </div>
+      <div class="">
+        <h6 class="uppercase font-semibold mb-2 flex justify-center md:justify-start">
+          QUICK LINKS
+        </h6>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Home</a>
+        </p>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">About</a>
+        </p>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Directions</a>
+        </p>
+        <p>
+          <a href="#!" class="text-gray-600">Team</a>
+        </p>
+      </div>
+      <div class="">
+        <h6 class="uppercase font-semibold mb-1 flex justify-center md:justify-start">
+          OPENING HOURS
+        </h6>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Mon - Fri-Open</a>
+        </p>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Saturdays-Open</a>
+        </p>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Sundays-Open</a>
+        </p>
+        <p>
+          <a href="#!" class="text-gray-600">Public Holidays-Open</a>
+        </p>
+      </div>
+      <div class="">
+        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+          CONTACTS
+        </h6>
+        <p class="flex items-center justify-center md:justify-start mb-4">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home"
+            class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path fill="currentColor"
+              d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z">
+            </path>
+          </svg>
+          Nairobi,  Embakasi,Kwa ndege stage
+        </p>
+        <p class="flex items-center justify-center md:justify-start mb-4">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope"
+            class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+            </path>
+          </svg>
+          tassiahospital@gmail.com
+        </p>
+        <p class="flex items-center justify-center md:justify-start mb-4">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone"
+            class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+            </path>
+          </svg>
+          07 212 031 85
+        </p>
+        <!-- socials  -->
+        <div class="flex  items-center ">
+          <a href="https://www.facebook.com/tassiahospital/?ref=page_internal" class="mr-6 text-gray-600">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
+              class="w-2.5" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512">
+              <path fill="currentColor"
+                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+              </path>
+            </svg>
+          </a>
+          <a href="#!" class="mr-6 text-gray-600">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
+              class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+              </path>
+            </svg>
+          </a>
+          <a href="#!" class="mr-6 text-gray-600">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google"
+              class="w-3.5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
+              <path fill="currentColor"
+                d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z">
+              </path>
+            </svg>
+          </a>
+          <a href="#!" class="mr-6 text-gray-600">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
+              class="w-3.5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+              </path>
+            </svg>
+          </a>
+        </div>
+        <!-- socials end  -->
+      </div>
+    </div>
+  </div>
+  <div class="text-center p-6 bg-gray-200 flex justify-center">
+    <span>© 2022 Copyright:</span>
+    <a class="text-gray-600 font-semibold" href="https://tailwind-elements.com/">Tassia Hospital</a>
+  </div>
+
+</footer>
+<!-- end footer  -->
+    </div>
+
+    <script>
+      //Javascript to toggle the menu
+      document.getElementById("nav-toggle").onclick = function () {
+        document.getElementById("nav-content").classList.toggle("hidden");
+      };
+    </script>
+  </body>
+</html>
