@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASSIA HOSPITAL - Modern Healthcare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Prevent horizontal scrolling */
+      html,
+      body {
+        overflow-x: hidden;
+        max-width: 100%;
+      }
+      /* Mobile menu animation */
+      .mobile-menu {
+        transition: transform 0.3s ease-in-out;
+      }
+      .mobile-menu.hidden {
+        transform: translateX(-100%);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Sticky Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20">
+          <div class="flex items-center">
+            <div class="flex-shrink-0 flex items-center space-x-2">
+              <div class="w-10 h-10 rounded-lg overflow-hidden">
+                <img
+                  src="/Images/logo.png"
+                  alt="Tassia Hospital Logo"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <span class="text-3xl font-bold text-[#30a6be]"
+                ><span class="text-[#1e2662]">Tassia</span> Hospital</span
+              >
+            </div>
+          </div>
+          <!-- Same navigation items -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#home"
+              class="text-gray-900 font-medium hover:text-blue-600 transition"
+              >Home</a
+            >
+            <a
+              href="#services"
+              class="text-gray-900 font-medium hover:text-blue-600 transition"
+              >Services</a
+            >
+            <a
+              href="#doctors"
+              class="text-gray-900 font-medium hover:text-blue-600 transition"
+              >Doctors</a
+            >
+            <a
+              href="#departments"
+              class="text-gray-900 font-medium hover:text-blue-600 transition"
+              >Departments</a
+            >
+            <a
+              href="#footer"
+              class="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition cursor-pointer"
+            >
+              Contact Us
+            </a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button class="text-gray-900">
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="fixed inset-0 bg-gray-900/50 z-50 hidden">
+      <div
+        class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform transition-transform duration-300 -translate-x-full"
+        id="menuContent"
+      >
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-8">
+            <div class="flex items-center">
+              <div class="flex-shrink-0 flex items-center space-x-2">
+                <div class="w-10 h-10 rounded-lg overflow-hidden">
+                  <img
+                    src="/Images/logo.png"
+                    alt="Tassia Hospital Logo"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="text-xl font-bold text-[#30a6be]"
+                  ><span class="text-[#1e2662]">Tassia</span> Hospital</span
+                >
+              </div>
+            </div>
+            <button id="closeMenu" class="text-gray-500 hover:text-gray-700">
+              <i class="fas fa-times text-2xl"></i>
+            </button>
+          </div>
+          <nav class="space-y-4">
+            <a href="#home" class="block text-gray-900 hover:text-blue-600 py-2"
+              >Home</a
+            >
+            <a
+              href="#services"
+              class="block text-gray-900 hover:text-blue-600 py-2"
+              >Services</a
+            >
+            <a
+              href="#doctors"
+              class="block text-gray-900 hover:text-blue-600 py-2"
+              >Doctors</a
+            >
+            <a
+              href="#departments"
+              class="block text-gray-900 hover:text-blue-600 py-2"
+              >Departments</a
+            >
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section -->
+
+    <!-- Updated Hero Section Button -->
+    <section
+      id="home"
+      class="pt-32 pb-20 bg-gradient-to-br from-blue-50 to-white overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:flex items-center justify-between lg:gap-12">
+          <!-- Content Side -->
+          <div class="lg:w-1/2 space-y-8">
+            <div class="flex items-center space-x-2">
+              <div class="w-12 h-1 bg-blue-600 rounded-full"></div>
+              <span class="text-blue-600 font-medium"
+                >Welcome to Tassia Hospital</span
+              >
+            </div>
+            <h1
+              class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight"
+            >
+              Your Health Is Our <span class="text-blue-600">Top Priority</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+              Experience world-class healthcare with cutting-edge technology and
+              compassionate care. Our team of expert doctors is dedicated to
+              your well-being.
+            </p>
+            <div class="pt-4">
+              <a
+                href="#services"
+                class="inline-block bg-blue-600 text-white px-8 py-4 rounded-xl font-medium hover:bg-blue-700 transition shadow-lg shadow-blue-200 cursor-pointer"
+              >
+                Find Our Services
+              </a>
+            </div>
+          </div>
+          <!-- Image side remains the same -->
+          <div class="lg:w-1/2 mt-12 lg:mt-0">
+            <div class="relative max-w-lg mx-auto lg:mx-0">
+              <div
+                class="absolute -top-8 -right-8 w-72 h-72 bg-blue-200 rounded-full opacity-50 blur-3xl"
+              ></div>
+              <div class="relative z-10">
+                <img
+                  src="/Images/tassia-2.png"
+                  alt="Medical Team"
+                  class="w-full h-auto rounded-2xl shadow-2xl"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Why Choose Us
+          </h2>
+          <p class="text-lg text-gray-600">
+            Experience exceptional care with our comprehensive medical services
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- 24/7 Emergency Care -->
+          <div
+            class="group relative bg-white rounded-2xl transition-all duration-300"
+          >
+            <!-- Background Pattern -->
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-blue-50 to-white rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+
+            <!-- Content -->
+            <div
+              class="relative p-8 border border-gray-100 rounded-2xl group-hover:border-blue-200 transition-all duration-300"
+            >
+              <div class="mb-6">
+                <div
+                  class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300"
+                >
+                  <i class="fas fa-clock text-2xl text-white"></i>
+                </div>
+              </div>
+              <h3
+                class="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors"
+              >
+                24/7 Emergency Care
+              </h3>
+              <p class="text-gray-600">
+                Round-the-clock emergency services with rapid response teams.
+                We're always ready to provide immediate medical attention when
+                you need it most.
+              </p>
+            </div>
+          </div>
+
+          <!-- Expert Doctors -->
+          <div
+            class="group relative bg-white rounded-2xl transition-all duration-300"
+          >
+            <!-- Background Pattern -->
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-blue-50 to-white rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+
+            <!-- Content -->
+            <div
+              class="relative p-8 border border-gray-100 rounded-2xl group-hover:border-blue-200 transition-all duration-300"
+            >
+              <div class="mb-6">
+                <div
+                  class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300"
+                >
+                  <i class="fas fa-user-md text-2xl text-white"></i>
+                </div>
+              </div>
+              <h3
+                class="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors"
+              >
+                Expert Doctors
+              </h3>
+              <p class="text-gray-600">
+                Our team of qualified and experienced medical professionals is
+                committed to providing the highest standard of care for all
+                patients.
+              </p>
+            </div>
+          </div>
+
+          <!-- Modern Technology -->
+          <div
+            class="group relative bg-white rounded-2xl transition-all duration-300"
+          >
+            <!-- Background Pattern -->
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-blue-50 to-white rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+
+            <!-- Content -->
+            <div
+              class="relative p-8 border border-gray-100 rounded-2xl group-hover:border-blue-200 transition-all duration-300"
+            >
+              <div class="mb-6">
+                <div
+                  class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300"
+                >
+                  <i class="fas fa-microscope text-2xl text-white"></i>
+                </div>
+              </div>
+              <h3
+                class="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors"
+              >
+                Modern Technology
+              </h3>
+              <p class="text-gray-600">
+                Equipped with essential modern medical facilities and diagnostic
+                equipment to ensure accurate and effective treatment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-blue-600">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <!-- Years Experience -->
+          <div
+            class="text-center opacity-0 translate-y-8"
+            data-animation="stat-item"
+          >
+            <div class="flex items-center justify-center">
+              <span class="text-5xl font-bold text-white" data-value="25"
+                >0</span
+              >
+              <span class="text-5xl font-bold text-white">+</span>
+            </div>
+            <div class="text-blue-100">Years Experience</div>
+          </div>
+
+          <!-- Specialist Doctors -->
+          <div
+            class="text-center opacity-0 translate-y-8"
+            data-animation="stat-item"
+          >
+            <div class="flex items-center justify-center">
+              <span class="text-5xl font-bold text-white" data-value="150"
+                >0</span
+              >
+              <span class="text-5xl font-bold text-white">+</span>
+            </div>
+            <div class="text-blue-100">Specialist Doctors</div>
+          </div>
+
+          <!-- Happy Patients -->
+          <div
+            class="text-center opacity-0 translate-y-8"
+            data-animation="stat-item"
+          >
+            <div class="flex items-center justify-center">
+              <span class="text-5xl font-bold text-white" data-value="50"
+                >0</span
+              >
+              <span class="text-5xl font-bold text-white">k+</span>
+            </div>
+            <div class="text-blue-100">Happy Patients</div>
+          </div>
+
+          <!-- Departments -->
+          <div
+            class="text-center opacity-0 translate-y-8"
+            data-animation="stat-item"
+          >
+            <div class="flex items-center justify-center">
+              <span class="text-5xl font-bold text-white" data-value="15"
+                >0</span
+              >
+              <span class="text-5xl font-bold text-white">+</span>
+            </div>
+            <div class="text-blue-100">Departments</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="flex items-center justify-center space-x-2 mb-4">
+            <div class="w-12 h-1 bg-blue-600 rounded-full"></div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+              Our Medical Services
+            </h2>
+            <div class="w-12 h-1 bg-blue-600 rounded-full"></div>
+          </div>
+          <p class="text-lg text-gray-600">
+            Quality healthcare services for our community
+          </p>
+        </div>
+
+        <!-- Primary Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <!-- Outpatient Services -->
+          <div class="group">
+            <div
+              class="relative bg-gray-50 p-6 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+            >
+              <div
+                class="absolute top-0 right-0 w-24 h-24 bg-blue-200 rounded-full opacity-50 -mr-12 -mt-12"
+              ></div>
+              <div class="relative">
+                <div
+                  class="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6"
+                >
+                  <i class="fas fa-stethoscope text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">
+                  Outpatient Services
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  General consultations, preventive care, and routine check-ups.
+                </p>
+                <ul class="text-sm text-gray-600 space-y-2">
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    General Medicine
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    Pediatric Care
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    Chronic Disease Management
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Emergency Care -->
+          <div class="group">
+            <div
+              class="relative bg-gray-50 p-6 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+            >
+              <div
+                class="absolute top-0 right-0 w-24 h-24 bg-blue-200 rounded-full opacity-50 -mr-12 -mt-12"
+              ></div>
+              <div class="relative">
+                <div
+                  class="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6"
+                >
+                  <i class="fas fa-ambulance text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">
+                  Emergency Care
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  24/7 emergency services for acute conditions and injuries.
+                </p>
+                <ul class="text-sm text-gray-600 space-y-2">
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    Accident & Emergency
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    Basic Life Support
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    Emergency Stabilization
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Maternal Care -->
+          <div class="group">
+            <div
+              class="relative bg-gray-50 p-6 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+            >
+              <div
+                class="absolute top-0 right-0 w-24 h-24 bg-blue-200 rounded-full opacity-50 -mr-12 -mt-12"
+              ></div>
+              <div class="relative">
+                <div
+                  class="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6"
+                >
+                  <i class="fas fa-baby text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">
+                  Maternal & Child Health
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Comprehensive care for mothers and children.
+                </p>
+                <ul class="text-sm text-gray-600 space-y-2">
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    Antenatal Care
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    Normal Delivery Services
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    Child Immunization
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Services Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <!-- Basic Laboratory -->
+          <div
+            class="bg-white p-4 rounded-xl border border-gray-200 hover:border-blue-600 transition-all duration-300"
+          >
+            <i class="fas fa-flask text-2xl text-blue-600 mb-3"></i>
+            <h4 class="text-lg font-bold text-gray-900 mb-2">
+              Laboratory Services
+            </h4>
+            <p class="text-sm text-gray-600">Basic diagnostic testing</p>
+          </div>
+
+          <!-- Pharmacy -->
+          <div
+            class="bg-white p-4 rounded-xl border border-gray-200 hover:border-blue-600 transition-all duration-300"
+          >
+            <i class="fas fa-pills text-2xl text-blue-600 mb-3"></i>
+            <h4 class="text-lg font-bold text-gray-900 mb-2">Pharmacy</h4>
+            <p class="text-sm text-gray-600">Essential medicines</p>
+          </div>
+
+          <!-- Minor Surgery -->
+          <div
+            class="bg-white p-4 rounded-xl border border-gray-200 hover:border-blue-600 transition-all duration-300"
+          >
+            <i class="fas fa-cut text-2xl text-blue-600 mb-3"></i>
+            <h4 class="text-lg font-bold text-gray-900 mb-2">Minor Surgery</h4>
+            <p class="text-sm text-gray-600">Basic surgical procedures</p>
+          </div>
+
+          <!-- Nutrition -->
+          <div
+            class="bg-white p-4 rounded-xl border border-gray-200 hover:border-blue-600 transition-all duration-300"
+          >
+            <i class="fas fa-apple-alt text-2xl text-blue-600 mb-3"></i>
+            <h4 class="text-lg font-bold text-gray-900 mb-2">
+              Nutrition Services
+            </h4>
+            <p class="text-sm text-gray-600">Dietary counseling</p>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="mt-12 text-center">
+          <p class="mt-4 text-gray-600">
+            Available 24/7 for emergency services
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Departments Section -->
+    <!-- Departments Section -->
+    <section id="departments" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Departments</h2>
+          <p class="text-gray-600">
+            Comprehensive primary and essential healthcare services for our
+            community
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Outpatient Department -->
+          <div class="group">
+            <div
+              class="bg-white p-6 rounded-2xl shadow-lg group-hover:shadow-xl transition duration-300"
+            >
+              <div
+                class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-stethoscope text-2xl text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Outpatient Department
+              </h3>
+              <p class="text-gray-600">
+                General consultations and primary healthcare services
+              </p>
+            </div>
+          </div>
+
+          <!-- Maternal & Child Health -->
+          <div class="group">
+            <div
+              class="bg-white p-6 rounded-2xl shadow-lg group-hover:shadow-xl transition duration-300"
+            >
+              <div
+                class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-baby-carriage text-2xl text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Maternal & Child Health
+              </h3>
+              <p class="text-gray-600">
+                Antenatal care, delivery services, and child wellness
+              </p>
+            </div>
+          </div>
+
+          <!-- Emergency Department -->
+          <div class="group">
+            <div
+              class="bg-white p-6 rounded-2xl shadow-lg group-hover:shadow-xl transition duration-300"
+            >
+              <div
+                class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-ambulance text-2xl text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Emergency Department
+              </h3>
+              <p class="text-gray-600">
+                24/7 emergency care and acute medical services
+              </p>
+            </div>
+          </div>
+
+          <!-- Laboratory Services -->
+          <div class="group">
+            <div
+              class="bg-white p-6 rounded-2xl shadow-lg group-hover:shadow-xl transition duration-300"
+            >
+              <div
+                class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-flask text-2xl text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Laboratory Services
+              </h3>
+              <p class="text-gray-600">
+                Essential diagnostic tests and basic lab services
+              </p>
+            </div>
+          </div>
+
+          <!-- Pharmacy Department -->
+          <div class="group">
+            <div
+              class="bg-white p-6 rounded-2xl shadow-lg group-hover:shadow-xl transition duration-300"
+            >
+              <div
+                class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-pills text-2xl text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Pharmacy Department
+              </h3>
+              <p class="text-gray-600">
+                Essential medicines and pharmaceutical services
+              </p>
+            </div>
+          </div>
+
+          <!-- Inpatient Services -->
+          <div class="group">
+            <div
+              class="bg-white p-6 rounded-2xl shadow-lg group-hover:shadow-xl transition duration-300"
+            >
+              <div
+                class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-bed text-2xl text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Inpatient Services
+              </h3>
+              <p class="text-gray-600">
+                Basic ward services and overnight care
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Button -->
+        <div class="mt-12 text-center"></div>
+      </div>
+    </section>
+    <!-- Insurance Partners Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">
+            Insurance Partners
+          </h2>
+          <p class="text-gray-600">
+            We work with leading insurance providers to ensure quality
+            healthcare is accessible to all
+          </p>
+        </div>
+
+        <!-- Insurance Logos Grid -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center"
+        >
+          <!-- Insurance Logo 1 -->
+          <div
+            class="w-full max-w-[200px] p-6 flex items-center justify-center transition-all duration-300"
+          >
+            <img
+              src="/Images/SHA.png"
+              alt="Insurance Partner"
+              class="w-full h-auto object-contain"
+            />
+          </div>
+
+          <!-- Insurance Logo 2 -->
+          <div
+            class="w-full max-w-[200px] p-6 flex items-center justify-center transition-all duration-300"
+          >
+            <img
+              src="/Images/jubilee.png"
+              alt="Insurance Partner"
+              class="w-full h-auto object-contain"
+            />
+          </div>
+
+          <!-- Insurance Logo 3 -->
+          <div
+            class="w-full max-w-[200px] p-6 flex items-center justify-center transition-all duration-300"
+          >
+            <img
+              src="/Images/Trident.jpeg"
+              alt="Insurance Partner"
+              class="w-full h-auto object-contain"
+            />
+          </div>
+
+          <!-- Insurance Logo 4 -->
+          <div
+            class="w-full max-w-[200px] p-6 flex items-center justify-center transition-all duration-300"
+          >
+            <img
+              src="/Images/Britam.png"
+              alt="Insurance Partner"
+              class="w-full h-auto object-contain"
+            />
+          </div>
+
+          <!-- Insurance Logo 5 -->
+          <div
+            class="w-full max-w-[200px] p-6 flex items-center justify-center transition-all duration-300"
+          >
+            <img
+              src="/Images/AON.png"
+              alt="Insurance Partner"
+              class="w-full h-auto object-contain"
+            />
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="mt-12 text-center">
+          <p class="text-gray-600 mb-6">
+            Don't see your insurance provider? Contact us to verify coverage.
+          </p>
+          <a
+            href="#footer"
+            class="inline-block bg-blue-600 text-white px-8 py-3 rounded-xl font-medium hover:bg-blue-700 transition shadow-lg shadow-blue-200"
+          >
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="flex items-center justify-center space-x-2 mb-4">
+            <div class="w-12 h-1 bg-blue-600 rounded-full"></div>
+            <h2 class="text-4xl font-bold text-gray-900">Patient Stories</h2>
+            <div class="w-12 h-1 bg-blue-600 rounded-full"></div>
+          </div>
+          <p class="text-gray-600 text-lg">
+            Hear what our patients say about their experience at Tassia Hospital
+          </p>
+        </div>
+
+        <!-- Testimonials Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="group">
+            <div
+              class="bg-gray-50 p-8 rounded-2xl transition-all duration-300 hover:shadow-xl relative"
+            >
+              <!-- Quote Icon -->
+              <div class="absolute -top-4 -left-4">
+                <div
+                  class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-quote-left text-white text-sm"></i>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="mb-6">
+                <p class="text-gray-600 mb-6">
+                  "I was impressed by the level of care and attention I received
+                  at Tassia Hospital. The medical team was professional and
+                  caring throughout my treatment."
+                </p>
+                <div class="flex items-center">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center"
+                  >
+                    <i class="fas fa-user text-blue-600"></i>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-lg font-bold text-gray-900">
+                      Amina Abdilatif
+                    </h4>
+                    <div class="flex text-yellow-400 mt-1">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="group">
+            <div
+              class="bg-gray-50 p-8 rounded-2xl transition-all duration-300 hover:shadow-xl relative"
+            >
+              <!-- Quote Icon -->
+              <div class="absolute -top-4 -left-4">
+                <div
+                  class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-quote-left text-white text-sm"></i>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="mb-6">
+                <p class="text-gray-600 mb-6">
+                  "The maternity services at Tassia Hospital are excellent. The
+                  nurses were supportive and the facilities are well-maintained.
+                  I felt well cared for."
+                </p>
+                <div class="flex items-center">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center"
+                  >
+                    <i class="fas fa-user text-blue-600"></i>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-lg font-bold text-gray-900">
+                      Odhiambo Grace
+                    </h4>
+                    <div class="flex text-yellow-400 mt-1">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="group">
+            <div
+              class="bg-gray-50 p-8 rounded-2xl transition-all duration-300 hover:shadow-xl relative"
+            >
+              <!-- Quote Icon -->
+              <div class="absolute -top-4 -left-4">
+                <div
+                  class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-quote-left text-white text-sm"></i>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="mb-6">
+                <p class="text-gray-600 mb-6">
+                  "The emergency response team was quick and efficient. The
+                  doctors explained everything clearly and provided excellent
+                  care."
+                </p>
+                <div class="flex items-center">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center"
+                  >
+                    <i class="fas fa-user text-blue-600"></i>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-lg font-bold text-gray-900">
+                      James Kariuki
+                    </h4>
+                    <div class="flex text-yellow-400 mt-1">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer" class="bg-gray-900 text-gray-300 pt-20 pb-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <div>
+            <div class="flex items-center space-x-2 mb-6">
+              <div
+                class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center"
+              >
+                <span class="text-2xl font-bold text-white">T</span>
+              </div>
+              <span class="text-2xl font-bold text-white">TASSIA</span>
+            </div>
+            <p class="text-gray-400 mb-6">
+              Providing world-class healthcare services with compassion and
+              excellence.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://www.facebook.com/tassiahospital/"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://x.com/hospitaltassia"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://ke.linkedin.com/in/tassia-hospital-380931220"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/tassiahospital/"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-white mb-6">Quick Links</h3>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Our Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#departments"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Departments</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#testimonials"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Testimonials</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-white mb-6">Departments</h3>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="#departments"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Outpatient Department</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#departments"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Maternal & Child Health</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#departments"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Emergency Department</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#departments"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Laboratory Services</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-white mb-6">Contact Info</h3>
+            <ul class="space-y-4">
+              <li class="flex items-start space-x-3">
+                <i class="fas fa-map-marker-alt mt-1"></i>
+                <span>Embakasi Kwandege stage, Nairobi</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <i class="fas fa-phone"></i>
+                <span>0721 203 185</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <i class="fas fa-envelope"></i>
+                <span>tassiahospital@gmail.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-12 pt-8 border-t border-gray-800 text-center">
+          <p class="text-gray-400">
+            © 2025 Tassia Hospital. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <button
+      class="fixed bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-700 transition"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
+  <script>
+    const mobileMenu = document.getElementById("mobileMenu");
+    const menuContent = document.getElementById("menuContent");
+    const menuButton = document.querySelector(".md\\:hidden button");
+    const closeButton = document.getElementById("closeMenu");
+    const menuLinks = document.querySelectorAll("#mobileMenu a");
+
+    function openMenu() {
+      mobileMenu.classList.remove("hidden");
+      setTimeout(() => {
+        menuContent.classList.remove("-translate-x-full");
+      }, 10);
+    }
+
+    function closeMenu() {
+      menuContent.classList.add("-translate-x-full");
+      setTimeout(() => {
+        mobileMenu.classList.add("hidden");
+      }, 300);
+    }
+
+    menuButton.addEventListener("click", openMenu);
+    closeButton.addEventListener("click", closeMenu);
+    mobileMenu.addEventListener("click", (e) => {
+      if (e.target === mobileMenu) {
+        closeMenu();
+      }
+    });
+
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    // Back to top button functionality
+    const backToTopButton = document.querySelector(".fixed.bottom-8.right-8");
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.remove("hidden");
+      } else {
+        backToTopButton.classList.add("hidden");
+      }
+    });
+
+    backToTopButton.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Animation for stats counting
+    function animateValue(element, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        const currentValue = Math.floor(progress * (end - start) + start);
+        element.textContent = currentValue;
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+
+    // Intersection Observer for triggering animations
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1,
+    };
+
+    let animated = false;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !animated) {
+          animated = true;
+          // Animate stat items
+          const statItems = document.querySelectorAll(
+            '[data-animation="stat-item"]'
+          );
+          statItems.forEach((item, index) => {
+            setTimeout(() => {
+              // Fade in and slide up animation
+              item.style.transition = "all 1s ease-out";
+              item.style.opacity = "1";
+              item.style.transform = "translateY(0)";
+
+              // Number counting animation
+              const valueDisplay = item.querySelector("[data-value]");
+              const value = parseInt(valueDisplay.getAttribute("data-value"));
+              animateValue(valueDisplay, 0, value, 2000);
+            }, index * 200); // Stagger the animations
+          });
+
+          // Unobserve after animation
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Start observing the stats section
+    const statsSection = document.querySelector(".py-20.bg-blue-600");
+    observer.observe(statsSection);
+
+    // Smooth scroll functionality
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href");
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      });
+    });
+  </script>
+</html>
